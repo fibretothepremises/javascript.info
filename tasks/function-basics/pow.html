@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+
+            // function askForValues() {
+            //     let x = +prompt('x?','');
+            //     let n = +prompt('n?','');
+            //     function showPow(x,n) {
+            //         if (n > 1) {
+            //             alert(x**n);
+            //             return;
+            //         }
+            //         askForValues();
+            //     }
+            //     showPow(x,n);
+                
+            // }
+            // askForValues();
+
+            // USING LOOPS:
+            function pow(x,n) {
+                let result = x
+                for (i=1;i<n;i++) {
+                    result *= x
+                }
+                return result;
+            }
+
+            let x = +prompt('x?','');
+            let n = +prompt('n?','');
+            if (n > 1) {
+                alert(pow(x,n));
+            } else {
+                alert('n must be greater than 1 dawgggg!')
+            }
+        </script>
+    </body>
+</html>
